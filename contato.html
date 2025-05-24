@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alice P</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="navbar">
+    <div class="logo">Alice</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Cada peça conta uma história</h1>
+      <p>E a sua pode começar com uma mensagem</p>
+    </section>
+
+    <section class="contato-container">
+      <div class="info">
+        <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Ícone de mensagem" />
+        <p>
+          Para orçamentos, parcerias ou apenas para dizer um oi, envie um e-mail para:<br>
+          <strong>alice@email.com</strong><br><br>
+          Ou utilize o formulário ao lado.
+        </p>
+      </div>
+
+      <form class="formulario" id="form-contato">
+        <h2>Contato</h2>
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><a href="#">Termos de serviço</a> | <a href="#">Política de privacidade</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
