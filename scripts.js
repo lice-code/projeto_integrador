@@ -3,3 +3,12 @@ document.querySelectorAll('button').forEach(btn => {
     alert('Mais informações em breve!');
   });
 });
+
+
+
+
+//termos e privacidade
+
+function topo() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
