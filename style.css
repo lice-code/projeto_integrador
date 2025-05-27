@@ -116,7 +116,7 @@
      text-align: center;
      color: white;
      background-color: rgba(0, 0, 0, 0.5);
-     padding: 10rem;
+     padding: 4rem;
      border-radius: 10px;
    }
 
@@ -197,15 +197,36 @@
 
    .highlights {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
      gap: 20px;
+     padding: 40px 20px;
    }
 
    .highlight {
-     background-color: #f2f2f2;
-     padding: 20px;
-     border-radius: 10px;
+     background-color: #ffffff;
+     padding: 25px 20px;
+     border-radius: 20px;
+     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
      text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .highlight:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+   }
+
+   .highlight h1 {
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+     color: #6e2639;
+     /* mesma cor do título da bio */
+   }
+
+   .highlight p {
+     font-size: 1rem;
+     color: #333;
+     line-height: 1.4;
    }
 
 
@@ -249,25 +270,13 @@
      border-radius: 10px;
    }
 
-   .pilares {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     padding: 40px 20px;
-     background-color: #f9f9f9;
-     gap: 20px;
+
+
+   .banner {
+     width: 100%;
    }
 
-   .pilar {
-     max-width: 300px;
-     text-align: center;
-   }
 
-   .pilar img {
-     width: 60px;
-     height: 60px;
-     margin-bottom: 15px;
-   }
 
    .projetos {
      padding: 40px 20px;
@@ -285,6 +294,7 @@
      background-color: #f1f1f1;
      padding: 15px;
      border-radius: 10px;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
    }
 
    .card img {
@@ -314,6 +324,109 @@
    .card button:hover {
      background-color: #33475b;
    }
+
+   .btn {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #0d1f2d;
+
+     color: white;
+     text-decoration: none;
+     border-radius: 8px;
+     font-weight: bold;
+     transition: background 0.3s;
+   }
+
+   .btn:hover {
+     background-color: #33475b;
+
+   }
+
+   .container {
+     max-width: 900px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: 20px;
+   }
+
+   .projeto {
+     grid-column: span 12;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+   }
+
+   .imagem-projeto {
+     flex: 1 1 300px;
+     background-color: #ddd;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 300px;
+   }
+
+   .placeholder {
+     color: #555;
+     text-align: center;
+     padding: 10px;
+   }
+
+   .conteudo {
+     flex: 2 1 400px;
+   }
+
+   h1 {
+     font-size: 24px;
+     margin-bottom: 5px;
+   }
+
+   h2 {
+     font-size: 20px;
+     color: #555;
+     margin-bottom: 10px;
+   }
+
+   h3 {
+     font-size: 16px;
+     color: #888;
+     margin-top: 20px;
+     margin-bottom: 5px;
+   }
+
+   p {
+     margin-bottom: 20px;
+   }
+
+   .secao {
+     grid-column: span 12;
+     margin-top: 20px;
+   }
+
+.titulo-destaque {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 40px 0 10px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -352,7 +465,7 @@
      flex-wrap: wrap;
      justify-content: center;
      padding: 40px 20px;
-     gap: 40px;
+     gap: 180px;
    }
 
    .info {
@@ -405,80 +518,75 @@
      background-color: #33475b;
    }
 
-
-
-
-
-
    /* Termos e privacidade (Não verifiquei ainda, ent deve ta so a bagunça) */
 
    body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+     font-family: Arial, sans-serif;
+     background: #f4f4f4;
+     color: #333;
+     margin: 0;
+     padding: 0;
+   }
 
-.container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px 30px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-}
+   .container {
+     max-width: 800px;
+     margin: 60px auto;
+     padding: 40px 30px;
+     background: #ffffff;
+     border-radius: 16px;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+   }
 
-p {
-  line-height: 1.7;
-  margin-top: 12px;
-}
+   p {
+     line-height: 1.7;
+     margin-top: 12px;
+   }
 
-a {
-  display: inline-block;
-  margin-top: 30px;
-  text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
+   a {
+     display: inline-block;
+     margin-top: 5px;
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: 500;
+     transition: color 0.2s ease;
+   }
 
-a:hover {
-  color: #1e40af;
-  text-decoration: underline;
-}
+   a:hover {
+     color: #1e40af;
+     text-decoration: underline;
+   }
 
-button {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 30px;
-  font-size: 1rem;
-  transition: background-color 0.2s ease;
-}
+   button {
+     background-color: #2563eb;
+     color: white;
+     border: none;
+     padding: 10px 18px;
+     border-radius: 8px;
+     cursor: pointer;
+     margin-top: 30px;
+     font-size: 1rem;
+     transition: background-color 0.2s ease;
+   }
 
-button:hover {
-  background-color: #1e40af;
-}
+   button:hover {
+     background-color: #1e40af;
+   }
 
-@media (max-width: 600px) {
-  .container {
-    margin: 20px;
-    padding: 20px;
-  }
+   @media (max-width: 600px) {
+     .container {
+       margin: 20px;
+       padding: 20px;
+     }
 
-  h1 {
-    font-size: 1.8rem;
-  }
+     h1 {
+       font-size: 1.8rem;
+     }
 
-  h2 {
-    font-size: 1.1rem;
-  }
+     h2 {
+       font-size: 1.1rem;
+     }
 
-  button {
-    width: 100%;
-  }
-}
+     button {
+       width: 100%;
+     }
+   }
