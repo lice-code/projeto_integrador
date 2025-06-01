@@ -64,3 +64,4 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarAoRolar(); // para os visíveis no início
   }
 });
+
