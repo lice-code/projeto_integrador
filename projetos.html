@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">Alice</div>
@@ -25,14 +24,10 @@
   </header>
 
   <main>
-
-
+    <!-- Pilares -->
     <h1 class="titulo-destaque">Pilares da minha estrutura
       de planejamento</h1>
     <p class="subtitulo">"O que guia cada passo do meu planejamento"</p>
-
-    </section>
-
 
     <section class="highlights">
       <div class="highlight">
@@ -66,70 +61,58 @@
       </div>
     </section>
 
-    <br><br><br><br><br>
+    <br><br><br>
 
+    <!-- Projetos -->
     <h1 class="titulo-destaque">Projetos</h1>
     <p class="subtitulo">Minhas principais criações, em um geral</p>
 
+    <!-- Filtro -->
+    <div class="filtros">
+      <button class="filtro-btn" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="pintura">Pintura de tela a óleo</button>
+      <button class="filtro-btn" data-categoria="prototipo">Prototipagem de site</button>
+    </div>
 
+    <!-- Projetos -->
     <div class="grid">
-      <!-- Repitir esse bloco pra cada projeto -->
-      <div class="card">
+      <!-- 01 -->
+      <div class="card pintura">
         <img src="image/promessas_afogadas.jpg" alt="Imagem do projeto" />
+        <br><br>
         <h2>Promessas Afogadas</h2>
         <p>"Onde as promessas afundam, nasce a beleza."</p>
         <br>
         <h3>Categoria: Pintura de tela a óleo</h3>
-
         <br>
         <a href="promessas_afogadas.html" class="btn">Saiba Mais</a>
       </div>
 
-
-      <!-- Copia os cartão até onde eu quiser -->
-      <div class="card">
+      <!-- 02 -->
+      <div class="card prototipo">
         <img src="image/cyber_cafe.jpeg" alt="Imagem do projeto" />
+        <br><br>
         <h2>Cyber Cafe - Noxus</h2>
         <p>"Um espaço feito para codar, jogar e relaxar"</p>
         <br>
         <h3>Categoria: Prototipagem de site</h3>
-
         <br>
         <a href="cyber_cafe.html" class="btn">Saiba Mais</a>
       </div>
 
-
-
-      <div class="card">
-        <img src="image/projetos.jpeg" alt="Imagem do projeto" />
-        <h2>Promessas Afogadas</h2>
-        <p>"Onde as promessas afundam, nasce a beleza."</p>
+      <!-- 03 -->
+      <div class="card pintura">
+        <img src="image/darth_vader.jpeg" alt="Imagem do projeto" />
+        <br><br>
+        <h2>Darth Vader</h2>
+        <p>"Dia do Orgulho Geek! - 25 de maio"</p>
         <br>
         <h3>Categoria: Pintura de tela a óleo</h3>
-
         <br>
-        <a href="#" class="btn">Saiba Mais</a>
+        <a href="darth_vader.html" class="btn">Saiba Mais</a>
       </div>
-
-
-
-      <div class="card">
-        <img src="image/projetos.jpeg" alt="Imagem do projeto" />
-        <h2>Promessas Afogadas</h2>
-        <p>"Onde as promessas afundam, nasce a beleza."</p>
-        <br>
-        <h3>Categoria: Pintura de tela a óleo</h3>
-
-        <br>
-        <a href="#" class="btn">Saiba Mais</a>
-      </div>
-
-
-
-
-
-    </div>
-    </section>
+      
+      
   </main>
 
   <footer class="footer">
@@ -137,7 +120,6 @@
   </footer>
 
   <script src="scripts.js"></script>
-
 </body>
 
 </html>
